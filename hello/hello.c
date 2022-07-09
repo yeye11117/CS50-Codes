@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main(void)
-
 {
 
-printf("Hello World\n");
+    int x
+    printf("Please write your name: \n")
+    scanf()
+    printf("Hello World\n");
 
 }
