@@ -3,9 +3,9 @@
 int main(void)
 {
 
-    char x;
+    char firstName[30];
     printf("Please write your name: \n");
-    scanf("%s", x);
-    printf("Hello %s.", x \n);
+    scanf("%s", firstName);
+    printf("Hello %s.", firstName);
 
 }
