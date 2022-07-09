@@ -3,9 +3,7 @@
 
 int main(void) {
 
-    char firstName[30];
-
-    printf("Please write your name: \n");
+    string firstName = get_string("What is your name ? \n");
 
     scanf("%s", firstName);
 
