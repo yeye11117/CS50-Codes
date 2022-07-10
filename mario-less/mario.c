@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    int block;
+    int block = 0;
 
-    printf ("Type a number between 1 and 8: \n");
-    scanf (%d, block);
-    prinf ("Your number is: %d", block);
+    printf("Type a number between 1 and 8: \n");
+    scanf ("%d", block);
+    printf("Your number is: %d \n", block);
 
 }
