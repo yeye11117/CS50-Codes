@@ -11,7 +11,7 @@ int main(void)
     for(printer = 1; printer <= blockHeight; ++printer)
     {
 
-        printf("kekekekek");
+        printf("# \n");
 
     }
     printf("Your number is: %d \n", blockHeight);
