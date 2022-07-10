@@ -8,7 +8,7 @@ int main(void)
     printf("Enter a height number between 1 and 8: \n");
     scanf ("%d", &blockHeight);
 
-    for(printer = 1, printer <= blockHeight; ++printer);
+    for(printer = 1; printer <= blockHeight; ++printer)
     {
 
         printf("kekekekek");
