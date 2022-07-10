@@ -3,9 +3,9 @@
 
 int main(void)
 {
-    int userNum = 0;
+    int userNum;
 
-    printf("Type a number between 1 and 8: \n");
+    printf("Enter a height number between 1 and 8: \n");
     scanf ("%d", &userNum);
     printf("Your number is: %d \n", userNum);
 
