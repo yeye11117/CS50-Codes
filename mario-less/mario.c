@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    int userNum;
+    int blockHeight;
 
     printf("Enter a height number between 1 and 8: \n");
-    scanf ("%d", &userNum);
-    printf("Your number is: %d \n", userNum);
+    scanf ("%d", &blockHeight);
+    printf("Your number is: %d \n", blockHeight);
 
 }
