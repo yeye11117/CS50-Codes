@@ -13,18 +13,18 @@ int main(void)
 
     while(row < 1 || row > 8);
 
-    for(y = 1; y <= row; ++y)
-    {
-
-        for(x = 1; x <= y; ++x)
+        for(y = 1; y <= row; ++y)
         {
 
-            printf("#");
+            for(x = 1; x <= y; ++x)
+            {
+
+                printf("#");
+
+            }
+
+            printf(" \n");
 
         }
-
-        printf(" \n");
-
-    }
 
 }
