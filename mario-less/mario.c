@@ -10,11 +10,11 @@ int main(void)
 
     for(y = 1; row <= y; ++row)
     {
-
+        printf("# \n");
         for(x = 1; x <= y; ++x)
         {
 
-        printf("# \n");
+            printf("kek \n");
 
         }
 
