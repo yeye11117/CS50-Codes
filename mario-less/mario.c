@@ -11,8 +11,6 @@ int main(void)
     for(y = 1; y <= row; ++y)
     {
 
-        printf("# \n");
-
         for(x = 1; x <= y; ++x)
         {
 
@@ -20,9 +18,8 @@ int main(void)
 
         }
 
+        printf(" \n");
 
     }
-
-    printf("%d", row);
 
 }
