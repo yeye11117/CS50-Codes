@@ -19,9 +19,7 @@ int main(void)
     }
 
     while(cents < .1 || cents > .99);
-    {
-
-    }
+    
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
