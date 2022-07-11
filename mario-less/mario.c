@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int y, x, row;
+    int y, x, row, space;
 
     printf("Enter a height number between 1 and 8: \n");
     scanf ("%d", &row);
