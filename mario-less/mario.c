@@ -11,12 +11,12 @@ int main(void)
     for(y = 1; row <= y; ++row)
     {
 
-        for(x = 1; x <= y; ++x)
+        /*for(x = 1; x <= y; ++x)
         {
 
             printf("kek \n");
 
-        }
+        }*/
         printf("# \n");
     }
 
