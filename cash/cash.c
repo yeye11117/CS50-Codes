@@ -13,8 +13,6 @@ int main(void)
 
     // Ask how many cents the customer is owed
     int cents = get_int("How much do you owe?: ");
-    scanf("%d", &cents);
-    printf("%d", cents);
 
     }
 
