@@ -17,7 +17,7 @@ int main(void)
             printf("kek \n");
 
         }
-            printf("# \n");
+        printf("# \n");
     }
 
 }
