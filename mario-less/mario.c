@@ -16,6 +16,7 @@ int main(void)
         for(y = 1; y <= row; ++y)
         {
 
+            for()
             for(x = 1; x <= y; ++x)
             {
 
