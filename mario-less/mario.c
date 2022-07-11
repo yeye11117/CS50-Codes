@@ -13,10 +13,10 @@ int main(void)
 
     while(row < 1 || row > 8);
 
-        for(y = 1; y < row; ++y)
+        for(y = 1; y <= row; ++y)
         {
 
-            for(space = 0; space < y - row - 1; space++)
+            for(space = 0; space < x - row - 1; space++)
             {
 
                 printf(" ");
