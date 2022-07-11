@@ -9,9 +9,19 @@ int calculate_pennies(int cents);
 
 int main(void)
 {
+    do
+    {
+
     // Ask how many cents the customer is owed
     int cents = get_cents();
+    printf("kek");
 
+    }
+
+    while(cents < .1 || cents > .99);
+    {
+
+    }
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
     cents = cents - quarters * 25;
