@@ -11,11 +11,18 @@ int main(void)
     for(y = 1; y <= row; ++y)
     {
 
-        /*for(x = 1; x <= y; ++x)
+        printf("# \n");
+
+        for(x = 1; x <= y; ++x)
         {
 
-        }*/
-        printf("# \n");
+            printf("#");
+
+        }
+
+
     }
+
     printf("%d", row);
+
 }
