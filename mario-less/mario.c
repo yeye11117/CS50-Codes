@@ -8,13 +8,11 @@ int main(void)
     printf("Enter a height number between 1 and 8: \n");
     scanf ("%d", &row);
 
-    for(y = 1; y <= row; ++row)
+    for(y = 1; y <= row; ++y)
     {
 
         /*for(x = 1; x <= y; ++x)
         {
-
-            printf("kek \n");
 
         }*/
         printf("# \n");
