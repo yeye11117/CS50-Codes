@@ -3,18 +3,18 @@
 
 int main(void)
 {
-    int blockHeight, blockWidth, printer;
+    int y, x, row;
 
     printf("Enter a height number between 1 and 8: \n");
-    scanf ("%d", &blockHeight);
+    scanf ("%d", &row);
 
-    for(printer = 1; printer <= blockHeight; ++printer)
+    for(row = 1; row <= y; ++row)
     {
-        for(printer = 1; blockHeight <= blockWidth; ++blockWidth)
+        for(row = 1; x <= y; ++x)
 
         printf("# \n");
 
     }
-    printf("Your number is: %d \n", blockHeight);
+    printf("Your number is: %d \n", row);
 
 }
