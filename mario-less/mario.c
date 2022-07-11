@@ -8,7 +8,8 @@ int main(void)
     printf("Enter a height number between 1 and 8: \n");
     scanf ("%d", &row);
 
-    while(row)
+    while(row > 1 || row < 8)
+    {
 
     for(y = 1; y <= row; ++y)
     {
@@ -22,6 +23,8 @@ int main(void)
 
         printf(" \n");
 
+    }
+    
     }
 
 }
