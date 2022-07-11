@@ -16,7 +16,7 @@ int main(void)
         for(y = 1; y <= row; ++y)
         {
 
-            for(space = 0; space < row - y - 1; space++)
+            for(space = 0; space < row - y; space++)
             {
 
                 printf(" ");
