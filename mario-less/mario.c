@@ -19,5 +19,5 @@ int main(void)
         }*/
         printf("# \n");
     }
-    printf(row);
+    printf("%d", row);
 }
