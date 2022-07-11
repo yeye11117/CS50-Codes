@@ -1,6 +1,5 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <math.h>
 
 int get_cents(void);
 int calculate_quarters(int cents);
@@ -10,10 +9,6 @@ int calculate_pennies(int cents);
 
 int main(void)
 {
-    float amount = get_float("Dollar Amount: ");
-    int pennies = round(amount * 100);
-    printf("Pennies: %i\n", pennies);
-
     // Ask how many cents the customer is owed
     int cents = get_cents();
 
