@@ -10,6 +10,7 @@ int main(void)
 
     for(printer = 1; printer <= blockHeight; ++printer)
     {
+        for(printer = 1; printer <= blockH)
 
         printf("# \n");
 
