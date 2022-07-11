@@ -7,7 +7,7 @@ int main(void)
 
     do
     {
-        printf("Enter a height number between 1 and 8: \n");
+        printf("How many rows between 1 and 8: \n");
         scanf ("%d", &row);
     }
 
