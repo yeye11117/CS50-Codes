@@ -5,11 +5,13 @@ int main(void)
 {
     int y, x, row, space;
 
-    printf("Enter a height number between 1 and 8: \n");
-    scanf ("%d", &row);
-
-    while(row > 1 || row < 8)
+    do
     {
+        printf("Enter a height number between 1 and 8: \n");
+        scanf ("%d", &row);
+    }
+
+    while(row < 1 || row > 8);
 
     for(y = 1; y <= row; ++y)
     {
@@ -22,8 +24,6 @@ int main(void)
         }
 
         printf(" \n");
-
-    }
 
     }
 
