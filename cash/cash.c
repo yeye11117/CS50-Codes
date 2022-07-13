@@ -37,13 +37,12 @@ int main(void)
 
 int get_cents(void)
 {
+    //This is the part that grabs the users input and returns the value back to int main
     int cents;
-    
     do
     {
         cents = get_int("Cents owed: ");
     }
-
     while(cents < 1);
 
     return cents;
@@ -51,12 +50,14 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
+    //here, the logic is that if the cent is equal or less than 25, it'll substract 25 from the total cent amount and add a counter to quarter.
     int quarters = 0;
     while(cents >= 25)
     {
         cents = cents - 25;
         quarters++;
     }
+    //The returned value is used to calculate amount of coins in the end.
     return quarters;
 }
 
