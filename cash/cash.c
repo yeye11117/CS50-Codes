@@ -45,7 +45,7 @@ int get_cents(void)
         scanf("%d", &cents);
     }
 
-    while(cents < 1 || cents > 100);
+    while(cents < 1 || cents >= 100);
 
     return cents;
 }
