@@ -41,7 +41,7 @@ int get_cents(void)
 
     do
     {
-        printf("Change owed: ");
+        printf("Change owed: \n");
         scanf("%d", &cents);
     }
 
