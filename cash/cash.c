@@ -49,7 +49,12 @@ int calculate_quarters(int cents)
 
 int calculate_dimes(int cents)
 {
-    // TODO
+    do
+    {
+
+        scanf()
+
+    }
     return 0;
 }
 
