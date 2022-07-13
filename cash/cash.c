@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_cents();
+int get_cents(void);
 int calculate_quarters(int cents);
 int calculate_dimes(int cents);
 int calculate_nickels(int cents);
@@ -47,7 +47,7 @@ int get_cents(void)
 
     while(cents < 1 || cents > 100);
 
-    return 0;
+    return cents;
 }
 
 int calculate_quarters(int cents)
