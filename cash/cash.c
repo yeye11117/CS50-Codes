@@ -37,7 +37,10 @@ int main(void)
 
 int get_cents(void)
 {
-    // TODO
+    do
+    {
+     scanf
+    }
     return 0;
 }
 
@@ -49,12 +52,7 @@ int calculate_quarters(int cents)
 
 int calculate_dimes(int cents)
 {
-    do
-    {
 
-        scanf()
-
-    }
     return 0;
 }
 
