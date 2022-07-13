@@ -41,7 +41,7 @@ int get_cents(void)
 
     do
     {
-        printf("Enter amount of cents to give back: ");
+        printf("Change owed: ");
         scanf("%d", &cents);
     }
 
