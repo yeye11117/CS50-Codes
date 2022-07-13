@@ -37,10 +37,13 @@ int main(void)
 
 int get_cents(void)
 {
+    int cents;
     do
     {
-     scanf
+     scanf("%d", &cents);
     }
+    while(cents < 1 || cents > 100);
+
     return 0;
 }
 
