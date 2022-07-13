@@ -38,10 +38,13 @@ int main(void)
 int get_cents(void)
 {
     int cents;
+    
     do
     {
-     scanf("%d", &cents);
+        printf("Enter amount of cents to give back: ");
+        scanf("%d", &cents);
     }
+
     while(cents < 1 || cents > 100);
 
     return 0;
