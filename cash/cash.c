@@ -41,11 +41,10 @@ int get_cents(void)
 
     do
     {
-        printf("Change owed: \n");
-        scanf("%d", &cents);
+        cents = get_int("Cents owed: ");
     }
 
-    while(cents < 1 || cents >= 100);
+    while(cents < 1);
 
     return cents;
 }
