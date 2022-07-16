@@ -38,7 +38,7 @@ int compute_score(string word)
     int sum=0;
     int numb;
     int n = strlen(word);
-    for(int i=0; i<n; i++)
+    for(int i=0; i<n; i++)          S C I E N C E
     {
         if(isupper(word[i]))
         {
