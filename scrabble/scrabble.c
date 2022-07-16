@@ -42,14 +42,14 @@ int compute_score(string word)
     {
         if(isupper(word[i]))
         {
-            numb = word[i]-65;
+            numb = word[i];
             numb = POINTS[numb];
         }
 
         if(islower(word[i]))
         {
 
-            numb = word[i]-97;
+            numb = word[i];
             numb = POINTS[numb];
         }
 
