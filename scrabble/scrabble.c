@@ -35,23 +35,29 @@ int main(void)
 
 int compute_score(string word)
 {
- int sum=0;
- int numb;
- int n = strlen(word);
- for(int i=0; i<n; i++){
-   if(isupper(word[i])){
-    numb = word[i]-65;
-    numb = POINTS[numb];
+    int sum=0;
+    int numb;
+    int n = strlen(word);
+    for(int i=0; i<n; i++)
+    {
+        if(isupper(word[i]))
+        {
+            numb = word[i]-65;
+            numb = POINTS[numb];
+        }
 
-   }
- if(islower(word[i])){
-    numb = word[i]-97;
-    numb = POINTS[numb];
-}
-else{
-numb = 0;
-}
+        if(islower(word[i]))
+        {
 
-sum+=numb;
-}
-return sum;
+            numb = word[i]-97;
+            numb = POINTS[numb];
+        }
+
+        else
+        {
+            numb = 0;
+        }
+
+        sum+=numb;
+    }
+        return sum;
