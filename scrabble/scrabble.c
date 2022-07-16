@@ -35,30 +35,14 @@ int main(void)
 
 int compute_score(string word)
 {
-    int sum=0;
-    int numb;
-    int n = strlen(word);
-    for(int i=0; i<n; i++)
+    // TODO: Compute and return a score for string
+
+    int score=0;
+
+    for(int i = 0; i < strlen(word); i++)
     {
         if(isupper(word[i]))
-        {
-            numb = word[i];
-            numb = POINTS[numb];
-        }
 
-        if(islower(word[i]))
-        {
 
-            numb = word[i];
-            numb = POINTS[numb];
-        }
-
-        else
-        {
-            numb = 0;
-        }
-
-        sum+=numb;
     }
-    return sum;
 }
