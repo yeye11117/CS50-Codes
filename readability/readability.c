@@ -6,7 +6,7 @@ int main(void)
 {
     int count;
     string sent = get_string("Text: ");
-    printf("Total number of letters: d%", sent);
+    printf("d%", &sent);
     //printf("%s \n", sent);//
 }
 
