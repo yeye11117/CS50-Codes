@@ -1,8 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
-#incldue <string.h>
+#include <string.h>
 
 int main(void)
 {
-
+    printf("kek");
 }
