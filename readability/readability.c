@@ -6,7 +6,7 @@ int main(void)
 {
     int count;
     string sent = get_string("Text: ");
-    printf(d%; count);
+    //printf("d%", count);//
     //printf("%s \n", sent);//
 }
 
