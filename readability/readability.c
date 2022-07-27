@@ -11,6 +11,7 @@ int main(void)
 int count_letters(string text)
 {
     int math = 0;
+    
     return math;
 
 }
