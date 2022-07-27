@@ -7,3 +7,10 @@ int main(void)
     string sent = get_string("Text: ");
     printf("%s \n", sent);
 }
+
+int count_letters(void)
+{
+
+
+
+}
