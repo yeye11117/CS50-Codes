@@ -8,9 +8,9 @@ int main(void)
     printf("%s \n", sent);
 }
 
-int count_letters(x)
+int count_letters(string text)
 {
-
-    return x;
+    int math = 0;
+    return math;
 
 }
