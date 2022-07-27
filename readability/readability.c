@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    int count=0;
+    int count = 0;
     string sent = get_string("Text: ");
-    printf("%d", count_letters);
+    printf("%d", count);
 
 }
 
