@@ -5,7 +5,7 @@
 int main(void)
 {
     string sent = get_string("Text: ");
-    int number = count_letters(sent);
+    int number = count_letters(text);
     printf("%d", text);
 
 }
