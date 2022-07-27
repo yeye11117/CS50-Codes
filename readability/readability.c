@@ -13,9 +13,9 @@ int main(void)
 int count_letters(string text)
 {
     int count = 0;
-    for(i = 0; i < strlen(sent); i++);
+    for(int i = 0; i < strlen(text); i++)
     {
-
+        if 
     }
     return count;
 
