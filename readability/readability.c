@@ -4,9 +4,9 @@
 
 int main(void)
 {
-    int count;
+    int count=0;
     string sent = get_string("Text: ");
-    printf("d%", &sent);
+    printf("%d", count);
     //printf("%s \n", sent);//
 }
 
