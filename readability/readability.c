@@ -6,8 +6,8 @@ int main(void)
 {
     int count=0;
     string sent = get_string("Text: ");
-    printf("%d", count);
-    //printf("%s \n", sent);//
+    printf("%d", count_letters);
+
 }
 
 int count_letters(string text)
