@@ -4,5 +4,6 @@
 
 int main(void)
 {
-    printf("kek");
+    string sent = get_string("Text: ");
+    printf("%s \n", sent);
 }
