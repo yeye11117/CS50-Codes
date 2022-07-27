@@ -4,14 +4,19 @@
 
 int main(void)
 {
+    int count;
     string sent = get_string("Text: ");
-    printf("%s \n", sent);
+    printf(d%; count);
+    //printf("%s \n", sent);//
 }
 
 int count_letters(string text)
 {
-    int math = 0;
-    
-    return math;
+    int count = 0;
+    for(i = 0; i < strlen(sent); i++);
+    {
+
+    }
+    return count;
 
 }
