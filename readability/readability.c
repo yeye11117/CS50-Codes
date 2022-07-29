@@ -8,7 +8,7 @@ int main(void)
 {
     string text = get_string("Text: ");
     int i = strlen(text);
-    printf( %s , i);
+    printf( "%d \n" , i);
 }
 
 
