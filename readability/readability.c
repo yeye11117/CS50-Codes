@@ -7,7 +7,8 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    printf(strlen(text));
+    int i = strlen(text);
+    printf( %s , i);
 }
 
 
