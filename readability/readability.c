@@ -6,10 +6,10 @@
 int main(void)
 {
 
-    int count_letters(get_string("Text: "));
-    //string sent = get_string("Text: ");
-    //int number = count_letters(sent);
-    printf("%d", text);
+    string text = get_string("Text: ");
+    int count_letters(string text);
+    
+    printf("%s", text);
 
 }
 
