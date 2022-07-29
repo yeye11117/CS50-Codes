@@ -5,9 +5,10 @@
 
 int main(void)
 {
-    
-    string sent = get_string("Text: ");
-    int number = count_letters(sent);
+
+    int count_letters(get_string("Text: "));
+    //string sent = get_string("Text: ");
+    //int number = count_letters(sent);
     printf("%d", text);
 
 }
