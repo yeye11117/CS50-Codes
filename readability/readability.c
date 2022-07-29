@@ -6,25 +6,9 @@
 
 int main(void)
 {
-    int i,count;
     string text = get_string("Text: ");
-
-    int count_letters(gets(str));
-
-    for (i = 0; i < text; i++)
-    {
-        int count = 0;
-        if(text[i]==c)
-        count++
-
-    }
-
-         printf("%s", count);
-
+    printf(strlen(text));
 }
-
-
-
 
 
 /*int count_letters(string text)
@@ -38,4 +22,4 @@ int main(void)
         }
     }
     return count;
-} */
+}*/
