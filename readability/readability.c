@@ -18,6 +18,7 @@ int main(void)
     }
 
          printf("%s", count);
+         
 }
 
 
