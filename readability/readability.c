@@ -6,12 +6,12 @@
 
 int main(void)
 {
-
+    int i,count;
     string text = get_string("Text: ");
-    
+
     int count_letters(string text);
 
-    for (int i = 0; i < text; i++)
+    for (i = 0; i < text; i++)
     {
         int count = 0;
         if(text[i]==c)
