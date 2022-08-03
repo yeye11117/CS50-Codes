@@ -7,22 +7,15 @@
 int main(void)
 {
     string text = get_string("Text: ");
-    int i = strlen(text);
-    printf( "%d \n" , i);
 
-    /*char str[50] = "Remove The Spaces!!";*/
-    char strStripped[50];
+    int letters = 0; /*I'm assuming you're not using C99+*/
 
-    int c = 0; /*I'm assuming you're not using C99+*/
-
-    for(; i < strlen(text); i++)
+    for(int i = 0; i < strlen(text); i++)
     {
         if (isalnum(text[i]))
         {
-        strStripped[c] = text[i];
-        c++;
+            letters++;
         }
     }
-    strStripped[c] = '\0';
-    printf("%d \n", c);
+    printf("%d \n", letters);
 }
