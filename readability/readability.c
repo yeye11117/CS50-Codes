@@ -19,7 +19,10 @@ int main(void)
             letters++;
         }
 
-        else if
+        else if( text[i] == ' ')
+        {
+            words++;
+        }
     }
     printf("%d letters \n", letters);
 }
