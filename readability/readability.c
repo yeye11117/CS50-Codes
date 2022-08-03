@@ -10,8 +10,8 @@ int main(void)
     int i = strlen(text);
     printf( "%d \n" , i);
 
-    char str[50] = "Remove The Spaces!!";
-    char strStripped[50];
+    /*char str[50] = "Remove The Spaces!!";
+    char strStripped[50];*/
 
     int c = 0; /*I'm assuming you're not using C99+*/
 
