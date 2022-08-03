@@ -10,19 +10,19 @@ int main(void)
     int i = strlen(text);
     printf( "%d \n" , i);
 
-    /*char str[50] = "Remove The Spaces!!";
-    char strStripped[50];*/
+    /*char str[50] = "Remove The Spaces!!";*/
+    char strStripped[50];
 
     int c = 0; /*I'm assuming you're not using C99+*/
 
-    for(; i < strlen(str); i++)
+    for(; i < strlen(text); i++)
     {
-        if (isalnum(str[i]))
+        if (isalnum(text[i]))
         {
-        strStripped[c] = str[i];
+        strStripped[c] = text[i];
         c++;
+        printf("%d \n", i);
         }
     }
     strStripped[c] = '\0';
-    printf("%s \n", strStripped);
 }
