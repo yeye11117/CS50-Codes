@@ -16,7 +16,7 @@ int main(void)
     int i = 0, c = 0; /*I'm assuming you're not using C99+*/
 
     for(; i < strlen(str); i++)
-        {
+    {
         if (isalnum(str[i]))
         {
         strStripped[c] = str[i];
