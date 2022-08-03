@@ -9,6 +9,22 @@ int main(void)
     string text = get_string("Text: ");
     int i = strlen(text);
     printf( "%d \n" , i);
+
+    char str[50] = "Remove The Spaces!!";
+    char strStripped[50];
+
+    int i = 0, c = 0; /*I'm assuming you're not using C99+*/
+
+    for(; i < strlen(str); i++)
+        {
+        if (isalnum(str[i]))
+        {
+        strStripped[c] = str[i];
+        c++;
+        }
+    }
+    strStripped[c] = '\0';
+
 }
 
 
