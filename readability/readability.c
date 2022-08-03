@@ -17,5 +17,5 @@ int main(void)
             letters++;
         }
     }
-    printf("%d \n", letters);
+    printf("%d letters \n", letters);
 }
