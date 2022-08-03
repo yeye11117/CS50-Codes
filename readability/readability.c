@@ -13,13 +13,13 @@ int main(void)
     char str[50] = "Remove The Spaces!!";
     char strStripped[50];
 
-    int x = 0, c = 0; /*I'm assuming you're not using C99+*/
+    int c = 0; /*I'm assuming you're not using C99+*/
 
-    for(; x < strlen(str); x++)
+    for(; i < strlen(str); i++)
     {
-        if (isalnum(str[x]))
+        if (isalnum(str[i]))
         {
-        strStripped[c] = str[x];
+        strStripped[c] = str[i];
         c++;
         }
     }
