@@ -24,19 +24,5 @@ int main(void)
         }
     }
     strStripped[c] = '\0';
-
+    printf("%s \n", strStripped);
 }
-
-
-/*int count_letters(string text)
-{
-    int count = 0;
-    for(int i = 0; i < strlen(text); i++)
-    {
-        if(text[i] != ' ')
-        {
-        count++;
-        }
-    }
-    return count;
-}*/
