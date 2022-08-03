@@ -23,6 +23,6 @@ int main(void)
         c++;
         }
     }
-    /*strStripped[c] = '\0';
+    strStripped[c] = '\0';
     printf("%d \n", c);
 }
