@@ -21,8 +21,8 @@ int main(void)
         {
         strStripped[c] = text[i];
         c++;
-        printf("%d \n", i);
         }
     }
-    strStripped[c] = '\0';
+    /*strStripped[c] = '\0';
+    printf("%d \n", c);
 }
