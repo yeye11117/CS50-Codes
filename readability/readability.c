@@ -8,7 +8,9 @@ int main(void)
 {
     string text = get_string("Text: ");
 
-    int letters = 0; /*I'm assuming you're not using C99+*/
+    int letters = 0;
+    int words = 0;
+    int sentence = 0;
 
     for(int i = 0; i < strlen(text); i++)
     {
@@ -16,6 +18,8 @@ int main(void)
         {
             letters++;
         }
+
+        else if
     }
     printf("%d letters \n", letters);
 }
