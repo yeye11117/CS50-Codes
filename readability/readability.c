@@ -25,4 +25,5 @@ int main(void)
         }
     }
     printf("%d letters \n", letters);
+    printf("%d words \n", words);
 }
