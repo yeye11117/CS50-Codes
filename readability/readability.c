@@ -24,9 +24,13 @@ int main(void)
             words++;
         }
 
-        else if(text[i] == ".', text[i] == ".',  )
+        else if(text[i] == '.' || text[i] == '!' || text[i] == '?'  )
+        {
+            sentence++;
+        }
 
     }
     printf("%d letters \n", letters);
     printf("%d words \n", words);
+    printf("%d sentence \n", sentence);
 }
