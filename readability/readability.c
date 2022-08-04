@@ -23,6 +23,7 @@ int main(void)
         {
             words++;
         }
+        
     }
     printf("%d letters \n", letters);
     printf("%d words \n", words);
