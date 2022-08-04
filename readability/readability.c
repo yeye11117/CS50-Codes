@@ -33,4 +33,6 @@ int main(void)
     printf("%d letters \n", letters);
     printf("%d words \n", words);
     printf("%d sentence \n", sentence);
+
+    index = 0.0588 * L - 0.296 * S - 15.8
 }
