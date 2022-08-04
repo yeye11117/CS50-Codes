@@ -8,9 +8,9 @@ int main(void)
 {
     string text = get_string("Text: ");
 
-    int letters = 0;
-    int words = 1;
-    int sentence = 0;
+    float letters = 0;
+    float words = 1;
+    float sentence = 0;
 
     for(int i = 0; i < strlen(text); i++)
     {
@@ -30,15 +30,18 @@ int main(void)
         }
 
     }
-    printf("%d letters \n", letters);
-    printf("%d words \n", words);
-    printf("%d sentence \n", sentence);
+    printf("%f letters \n", letters);
+    printf("%f words \n", words);
+    printf("%f sentence \n", sentence);
 
     /*index = 0.0588 * L - 0.296 * S - 15.8
     where L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text.*/
 
     float l = (letters/words)*100;
-    printf("%d \n", l);
+    printf("%f \n", l);
+    float s = (sentence/words)*100;
+    printf("%f \n", s);
+    
 
 
 }
