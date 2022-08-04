@@ -23,7 +23,9 @@ int main(void)
         {
             words++;
         }
-        
+
+        else if(text[i] == ".', text[i] == ".',  )
+
     }
     printf("%d letters \n", letters);
     printf("%d words \n", words);
