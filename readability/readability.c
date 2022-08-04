@@ -41,7 +41,9 @@ int main(void)
     printf("%f \n", l);
     float s = (sentence/words)*100;
     printf("%f \n", s);
-    
+    float index = (0.0588 * l) - (0.296 * s) - 15.8;
+    printf("%f \n", round(index));
+
 
 
 }
