@@ -3,8 +3,9 @@
 
 int main(int argc, string argv[])
 {
-    if(argv != 2)
+    if (argc != 2)
     {
         printf("lol no");
+        return
     }
 }
