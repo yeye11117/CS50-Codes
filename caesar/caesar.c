@@ -7,7 +7,7 @@ int main(int argc, string argv[])
 {
     if (argc != 2)
     {
-        printf("lol no");
+        printf("Usage: ./caesar key");
         return 1;
     }
 
@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     {
         if(!isdigit(argv[1][i]))
         {
-            printf("lol no");
+            printf("Usage: ./caesar key");
             return 1;
         }
     }
