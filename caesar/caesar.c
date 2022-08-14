@@ -25,10 +25,13 @@ int main(int argc, string argv[])
         //We take the string from the user
         string plaintext = get_string("Message:");
         printf("Ciphertext: ");
-        
+
         for (int j = 0; j < strlen(plaintext); j++)
         {
-
+            if(isupper(plaintext[j]))
+            {
+                
+            }
         }
     }
 
