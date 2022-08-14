@@ -28,12 +28,10 @@ int main(int argc, string argv[])
 
         for (int j = 0; j < strlen(plaintext); j++)
         {
-            if(isupper(plaintext[j]))
-            {
-                
-            }
+
+            printf("%c", plaintext[j] + k)
+
         }
-    }
 
 
 
