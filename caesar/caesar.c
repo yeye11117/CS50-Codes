@@ -20,12 +20,16 @@ int main(int argc, string argv[])
             printf("Usage: ./caesar key");
             return 1;
         }
-
+        //We need to turn our argument from a string to an int so we can later do math with it
         int k = atoi(argv[1]);
+        //We take the string from the user
         string plaintext = get_string("Message:");
         printf("Ciphertext: ");
+        
+        for (int j = 0; j < strlen(plaintext); j++)
+        {
 
-        for 
+        }
     }
 
 
