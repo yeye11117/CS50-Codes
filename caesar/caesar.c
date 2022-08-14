@@ -30,8 +30,8 @@ int main(int argc, string argv[])
         {
             if(isupper(plaintext[j]))
             {
-            // %C prints character individually, character ascii value - 65 to bring it to 0 + cipher x mod26 loops the alphabet + 65 to bring it into ascii value
-            printf(("%c", plaintext[j] - 65 + k) % 26 + 65);\
+                // %C prints character individually, character ascii value - 65 to bring it to 0 + cipher x mod26 loops the alphabet + 65 to bring it into ascii value
+                printf(("%c", plaintext[j] - 65 + k) % 26 + 65);\
             }
 
         }
