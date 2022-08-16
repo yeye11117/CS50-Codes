@@ -16,7 +16,6 @@ int main(int argc, string argv[])
     }
     //This ensures that the argument is in fact a digit by comparing it to a numerical value that loops around to match the argument.
     for (int i = 0; i < strlen(argv[1]); i++)
-
     {
         if(!isdigit(argv[1][i]))
         {
@@ -37,14 +36,14 @@ int main(int argc, string argv[])
             if(isupper(plaintext[j]))
             {
                 // %C prints character individually, character ascii value - 65 to bring it to 0 + cipher x mod26 loops the alphabet + 65 to bring it into ascii value
-                printf("%c", plaintext[j] - 65 + k % 26 + 65);
+                printf("%c", (plaintext[j] - 65 + k) % 26 + 65);
 
             }
 
             else if(islower(plaintext[j]))
             {
 
-                printf("%c", plaintext[j] - 97 + k % 26 + 97);
+                printf("%c", (plaintext[j] - 97 + k) % 26 + 97);
 
             }
 
@@ -59,6 +58,6 @@ int main(int argc, string argv[])
 
         printf("\n");
 
-    }
+     }
 
 }
