@@ -36,7 +36,7 @@ int main(int argc, string argv[])
 
             else if(islower(plaintext[j]))
             {
-                printf(("%c", plaintext[j] - 97 + k) % 26 + 97);
+                //printf(("%c", plaintext[j] - 97 + k) % 26 + 97);
             }
 
         }
