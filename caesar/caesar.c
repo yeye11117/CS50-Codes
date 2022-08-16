@@ -25,38 +25,38 @@ int main(int argc, string argv[])
 
         }
     }
-        //We need to turn our argument from a string to an int so we can later do math with it
-        int k = atoi(argv[1]);
-        //We take the string from the user
-        string plaintext = get_string("Message:");
-        printf("Ciphertext: ");
+    //We need to turn our argument from a string to an int so we can later do math with it
+    int k = atoi(argv[1]);
+    //We take the string from the user
+    string plaintext = get_string("Message:");
+    printf("Ciphertext: ");
 
-        for (int j = 0; j < strlen(plaintext); j++)
+    for (int j = 0; j < strlen(plaintext); j++)
+    {
+
+        if(isupper(plaintext[j]))
         {
-
-            if(isupper(plaintext[j]))
-            {
-                // %C prints character individually, character ascii value - 65 to bring it to 0 + cipher x mod26 loops the alphabet + 65 to bring it into ascii value
-                printf("%c", (plaintext[j] - 65 + k) % 26 + 65);
-
-            }
-
-            else if(islower(plaintext[j]))
-            {
-
-                printf("%c", (plaintext[j] - 97 + k) % 26 + 97);
-
-            }
-
-            else
-            {
-
-                printf("%c", plaintext[j]);
-
-            }
+            // %C prints character individually, character ascii value - 65 to bring it to 0 + cipher x mod26 loops the alphabet + 65 to bring it into ascii value
+            printf("%c", (plaintext[j] - 65 + k) % 26 + 65);
 
         }
 
-        printf("\n");
+        else if(islower(plaintext[j]))
+        {
+
+            printf("%c", (plaintext[j] - 97 + k) % 26 + 97);
+
+        }
+
+        else
+        {
+
+            printf("%c", plaintext[j]);
+
+        }
+
+    }
+
+    printf("\n");
 
 }
