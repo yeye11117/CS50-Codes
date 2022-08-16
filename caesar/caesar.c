@@ -24,6 +24,7 @@ int main(int argc, string argv[])
             return 1;
 
         }
+    }
         //We need to turn our argument from a string to an int so we can later do math with it
         int k = atoi(argv[1]);
         //We take the string from the user
@@ -57,7 +58,5 @@ int main(int argc, string argv[])
         }
 
         printf("\n");
-
-     }
 
 }
