@@ -48,6 +48,14 @@ int main(int argc, string argv[])
 
             }
 
+            else
+            {
+
+                prinf("%c", plaintext[j]);
+
+            }
+
+
         }
 
 }
