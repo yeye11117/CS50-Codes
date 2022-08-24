@@ -83,6 +83,7 @@ void print_winner(void)
 {
     int maxVotes = 0;
     maxVotes = candidates[0].votes;
+    printf("%i \n", maxVotes);
 
     return;
 }
