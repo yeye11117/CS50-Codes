@@ -70,7 +70,8 @@ bool vote(string name)
         if(strcmp(candidates[i].name, name) == 0)
         {
             candidates[i].votes++;
-            printf("found! \n",candidates[i].name);
+            //test that the thing candidate array actually updated actually updated
+            printf("found! %d \n",candidates[i].votes);
             return true;
         }
     }
