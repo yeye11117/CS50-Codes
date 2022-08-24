@@ -82,8 +82,8 @@ bool vote(string name)
 void print_winner(void)
 {
     int maxVotes = 0
-
     
+
 
     return;
 }
