@@ -1,11 +1,11 @@
-sort1 uses: TODO
+sort1 uses: Selection Sort
 
-How do you know?: TODO
+How do you know?: When tested on reversed50000.txt it was the slowest since it had to reach the end of the array everytime and place it at the begining.
 
 sort2 uses: Merge Sort
 
-How do you know?: When tested on random 50000.txt it was the fastest
+How do you know?: When tested on random50000.txt it was the fastest.
 
-sort3 uses: TODO
+sort3 uses: Bubble Sort
 
-How do you know?: TODO
+How do you know?: When tested on sorted.txt it was the second fastest since it has to to two passes to make sure its in order.
