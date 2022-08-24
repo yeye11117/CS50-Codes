@@ -71,7 +71,7 @@ bool vote(string name)
         {
             candidates[i].votes++;
             //test that the thing candidate array actually updated actually updated
-            printf("found! %d \n",candidates[i].votes);
+            //printf("found! %d \n",candidates[i].votes);
             return true;
         }
     }
@@ -88,24 +88,19 @@ void print_winner(void)
     {
         if(candidates[i].votes > winner)
         {
-
             winner = candidates[i].votes;
-
         }
 
     }
 
     for(int j = 0; j < candidate_count; j++)
     {
-
         if(candidates[j].votes == winner)
         {
-
             printf("%s \n", candidates[j].name);
-
         }
-
     }
+
     return;
 
 }
