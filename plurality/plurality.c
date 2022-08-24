@@ -67,7 +67,10 @@ bool vote(string name)
 {
     for (int x = 0; x < 9; x++)
     {
-        if(strcmp())
+        if(strcmp(name[x],) == 0)
+        {
+            vote++;
+        }
     }
     return false;
 }
