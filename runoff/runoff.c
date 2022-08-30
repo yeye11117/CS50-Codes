@@ -179,9 +179,9 @@ int find_min(void)
 {
     for(int i = 0; i < candidate_count; i++)
     {
-        if(candidates[i].vote)
+        if(candidates[i].votes < MAX_VOTERS)
         {
-            
+
         }
     }
     return 0;
