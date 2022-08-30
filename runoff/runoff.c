@@ -130,12 +130,10 @@ bool vote(int voter, int rank, string name)
 {
     for(int i = 0; i < voter_count; i++)
     {
-        for(int j = 0; j < voter_count; j++)
+        if(strcmp(candidates[i].name, name)==0)
         {
-            if (strcmp(candidates[i].name, candidates[i].votes) == 0)
-            {
-
-            }
+            prefrences[i][j] = i;
+            return true;
         }
     }
     return false;
