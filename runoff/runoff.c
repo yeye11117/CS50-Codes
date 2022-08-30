@@ -161,10 +161,10 @@ bool print_winner(void)
 {
     for(int i = 0; i < candidate_count; i++)
     {
-        
-        if(candidate_count >= candidate_count/2)
+
+        if(candidate_count >= candidate_count/2+1)
         {
-            printf("some one won");
+            printf("%s", candidate[i].name);
             return true;
         }
 
