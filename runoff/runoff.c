@@ -130,13 +130,22 @@ bool vote(int voter, int rank, string name)
 {
     for(int i = 0; i < voter_count; i++)
     {
-        if (strcmp(candidates[i].name, candidates[i].vote) == 0)
+        for(int j = 0; j < voter_count; j++)
         {
+            if (strcmp(candidates[i].name, candidates[i].votes = 0;) == 0)
+            {
 
+            }
         }
     }
     return false;
 }
+
+
+
+
+
+
 
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
