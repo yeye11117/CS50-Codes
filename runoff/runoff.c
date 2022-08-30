@@ -162,9 +162,9 @@ bool print_winner(void)
     for(int i = 0; i < candidate_count; i++)
     {
 
-        if(candidate_count >= candidate_count/2+1)
+        if(candidate_count >= voter_count/2+1)
         {
-            printf("%s", candidate[i].name);
+            printf("%s", candidates[i].name);
             return true;
         }
 
