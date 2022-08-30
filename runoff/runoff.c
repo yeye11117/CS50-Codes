@@ -130,9 +130,9 @@ bool vote(int voter, int rank, string name)
 {
     for(int i = 0; i < voter_count; i++)
     {
-        if (strcmp(candidates[i].name, name) == 0)
+        if (strcmp(candidates[i].name, candidates[i].vote) == 0)
         {
-            candidates[i][j].votes = 0;
+
         }
     }
     return false;
