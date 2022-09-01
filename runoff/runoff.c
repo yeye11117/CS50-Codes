@@ -181,7 +181,7 @@ int find_min(void)
     {
         if(candidates[i].votes < MAX_VOTERS)
         {
-
+            
         }
     }
     return 0;
