@@ -30,15 +30,24 @@ int main(int argc, char *argv[])
         printf("Could not open file.\n");
         return 1;
     }
-    
+
     float factor = atof(argv[3]);
 
     // TODO: Copy header from input file to output file
     uint8_t HEADER[HEADER_SIZE];
-    fread(HEADER, sizeof(uint8_t),HEADER_SIZE, input);
-    fwrite(HEADER, sizeof(uint8_t),HEADER_SIZE, output);
+    fread(HEADER, sizeof(uint8_t), HEADER_SIZE, input);
+    fwrite(HEADER, sizeof(uint8_t), HEADER_SIZE, output);
 
     // TODO: Read samples from input file and write updated data to output file
+    int16_t buffer;
+    while (fread(&buffer, sizeof(int16_t), 1, input))
+    {
+
+        //update volume
+        buffer *= factor;
+        fwrite(&buffer, sizeof(int16_t), 1, output);
+
+    }
 
     // Close files
     fclose(input);
