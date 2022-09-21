@@ -44,10 +44,25 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             //find the updated pixel value
             int sepiaRed = round(0.393 * Red + 0.769 * Green + 0.189 * Blue);
             int sepiaGreen = round(0.349 * Red + 0.686 * Green + 0.168 * Blue);
-            int sepiaBlue= round(0.272 * Red + 0.534 * Green + 0.131 * Blue);
+            int sepiaBlue = round(0.272 * Red + 0.534 * Green + 0.131 * Blue);
 
             //update if is any of the colors is > than 255, lock it at 255
-            if 
+            if (sepiaRed > 255)
+            {
+                sepiaRed = 255;
+            }
+
+            if (sepiaGreen > 255)
+            {
+                sepiaGreen = 255;
+            }
+
+            if (sepiaBlue > 255)
+            {
+                sepiaBlue = 255;
+            }
+
+
 
         }
 
