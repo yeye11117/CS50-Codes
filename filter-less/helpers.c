@@ -3,6 +3,17 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
+    //comb through every column
+    for (i = 0, i < height, i++)
+    {
+        //comb through every row
+        for (j = 0, j < width, j++)
+        {
+
+            
+        }
+
+    }
     return;
 }
 
