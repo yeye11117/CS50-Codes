@@ -41,9 +41,8 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
             float Blue = image[i][j].rgbtBlue;
             float Green = image[i][j].rgbtGreen;
 
-            //find the average value
-            int average = round((Red + Blue + Green) / 3);
-            image[i][j].rgbtRed = image[i][j].rgbtBlue = image[i][j].rgbtGreen = average;
+            //find the updated pixel value
+            
 
         }
 
