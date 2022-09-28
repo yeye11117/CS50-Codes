@@ -80,7 +80,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     for (int i = 0; i < height; i++)
     {
 
-        for (int j = 0; j < width/2; j++)
+        for (int j = 0; j < width / 2; j++)
         {
 
             RGBTRIPLE temp = image[i][j];
@@ -142,9 +142,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 }
 
                 //calculate average pixels
-                temp[i][j].rgbtRed = round(totalRed/ counter);
-                temp[i][j].rgbtBlue = round(totalBlue/ counter);
-                temp[i][j].rgbtGreen = round(totalGreen/ counter);
+                temp[i][j].rgbtRed = round(totalRed / counter);
+                temp[i][j].rgbtBlue = round(totalBlue / counter);
+                temp[i][j].rgbtGreen = round(totalGreen / counter);
 
             }
         }
