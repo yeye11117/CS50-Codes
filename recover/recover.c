@@ -33,5 +33,12 @@ int main(int argc, char *argv[])
     //char filename
     char *filename = malloc(8 * sizeof(char));
 
-    fread (buffer, sizeof(char), 512)
+    while (fread(buffer, sizeof(char), 512, input_file))
+    {
+        //check if byte indicate jpeg
+        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
+        {
+            
+        }
+    }
 }
