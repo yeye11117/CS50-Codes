@@ -11,8 +11,10 @@ int main(int argc, char *argv[])
 
     FILE *input_file = fopen(argv[1], r);
 
-    // check that the inout_file is valid.
+    // check that the input_file is valid.
 
-    
+    if (input_file == NULL)
+
+
 
 }
