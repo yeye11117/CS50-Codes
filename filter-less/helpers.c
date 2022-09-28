@@ -100,9 +100,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
     //creat copy of image
     RGBTRIPLE temp[height][width];
-    for (int i = 0, i < height; i++)
+    for (int i = 0; i < height; i++)
     {
-        for (int j = 0, j < width; j++)
+        for (int j = 0; j < width; j++)
         {
             temp[i][j] = image[i][j];
         }
@@ -113,7 +113,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
             int totalRed, totalBlue, totalGreen;
-            totalRed = totalBlue = total Blue = 0;
+            totalRed = totalBlue = totalGreen = 0;
             float counter = 0.00;
 
             //get neighbour pixles
@@ -133,20 +133,32 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     }
 
                     //get image value
-                    totalRed += image[currentX][currentY].rgbRed;
-                    totalGreen += image[currentX][currentY].rgbGreen;
-                    totalBlue += image[currentX][currentY].rgbBlue;
+                    totalRed += image[currentX][currentY].rgbtRed;
+                    totalGreen += image[currentX][currentY].rgbtGreen;
+                    totalBlue += image[currentX][currentY].rgbtBlue;
 
                     counter++;
 
                 }
 
                 //calculate average pixels
-                temp[i][j].rgbtRed = roun(totalRed/ counter);
-                temp[i][j].rgbtBlue = roun(totalBlue/ counter);
-                temp[i][j].rgbtGreen = roun(totalGreen/ counter);
+                temp[i][j].rgbtRed = round(totalRed/ counter);
+                temp[i][j].rgbtBlue = round(totalBlue/ counter);
+                temp[i][j].rgbtGreen = round(totalGreen/ counter);
 
             }
+        }
+    }
+
+    //copy new pixels into original image
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            image[i][j].rgbtRed = temp[i][j].rgbtRed;
+            image[i][j].rgbtBlue = temp[i][j].rgbtBlue;
+            image[i][j].rgbtGreen = temp[i][j].rgbtGreen;
+
         }
     }
     return;
