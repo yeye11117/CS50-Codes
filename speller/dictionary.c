@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <strings.h>
 
 #include "dictionary.h"
 
@@ -28,7 +29,6 @@ unsigned int hash_value;
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    // TODO
     hash_value = hash(word);
     node *cursor = table[hash_value];
 
@@ -36,24 +36,22 @@ bool check(const char *word)
     {
         if (strcasecmp(word, cursor->word) == 0)
         {
-
             return true;
-
         }
+        cursor = cursor->next;
     }
+    return false;
 }
 
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    // TODO: Improve this hash function
     unsigned long total = 0;
     for (int i = 0; i < strlen(word); i++)
     {
         total += tolower(word[i]);
     }
     return total % N;
-
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -102,6 +100,19 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // TODO
+    for (int i = 0; i < N; i++)
+    {
+        node *cursor = table[i];
+        while (cursor)
+        {
+            node *tmp = cursor;
+            cursor = cursor->next;
+            free(tmp);
+        }
+        if (cursor == NULL)
+        {
+            return true;
+        }
+    }
     return false;
 }
