@@ -1,6 +1,6 @@
 height = int(input("Height: "))
 
-if height > 0 and height < 9:
+while height > 0 and height < 9:
 
     for y in range(height):
         print("Q")
