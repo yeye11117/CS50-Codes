@@ -1,4 +1,7 @@
-height = int(input("Height: "))
+import cs50
+
+height = get_int("Height: ")
+
 
 while height >= 1 or height <= 8:
     for y in range(height):
