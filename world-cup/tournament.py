@@ -17,7 +17,7 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
 
-    #Declare the file as a variable. In this case the command line argument
+    # Declare the file as a variable. In this case the command line argument
     csv_file = sys.argv[1]
 
     with open(csv_file) as f:
@@ -25,7 +25,7 @@ def main():
         for team in dict:
             team["rating"] = int(team["rating"])
             teams.append(team)
-    #print(teams)
+    # print(teams)
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
