@@ -17,7 +17,7 @@ def main():
     teams = []
     # TODO: Read teams into memory from file
 
-    #Declare the file as a variable
+    #Declare the file as a variable. In this case the command line argument
     csv_file = sys.argv[1]
 
     with open(csv_file) as f:
