@@ -24,7 +24,7 @@ def main():
         dict = csv.DictReader(f)
         for team in dict:
             team["rating"] = int(team["rating"])
-            teams.append["team"]
+            teams.append("team")
             print(teams)
 
 
