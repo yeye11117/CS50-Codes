@@ -1,6 +1,6 @@
 import cs50
 
-height = get_int("Height: ")
+height = cs50.get_int("Height: ")
 
 
 while height >= 1 or height <= 8:
