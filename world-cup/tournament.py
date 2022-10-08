@@ -25,7 +25,7 @@ def main():
         for team in dict:
             team["rating"] = int(team["rating"])
             teams.append("team")
-            print(teams)
+    print(team)
 
 
     counts = {}
