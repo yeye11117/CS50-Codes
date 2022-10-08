@@ -25,7 +25,8 @@ def main():
         next(dict)
 
         for team in dict:
-            
+            team['team'] = c
+            print(c)
 
 
     counts = {}
