@@ -24,8 +24,8 @@ def main():
         dict = csv.DictReader(f)
         next(dict)
 
-        for row in dict:
-            print(row)
+        for team in dict:
+            
 
 
     counts = {}
