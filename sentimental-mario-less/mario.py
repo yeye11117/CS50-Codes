@@ -1,4 +1,6 @@
 height = int(input("Height: "))
 
-for i in range(height):
+for y in range(height):
     print("#")
+    for x in range(y):
+        print("1")
