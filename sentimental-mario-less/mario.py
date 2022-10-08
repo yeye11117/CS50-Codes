@@ -7,6 +7,4 @@ while height > 0 and height < 9:
         print("Q")
         for x in range(height):
             print("#", end = '')
-
-else:
-    height
+    break
