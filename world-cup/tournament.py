@@ -18,7 +18,7 @@ def main():
     # TODO: Read teams into memory from file
 
     #Declare the file as a variable
-    csv_file = ("2018m.csv")
+    csv_file = sys.argv[1]
 
     with open(csv_file) as f:
         dict = csv.DictReader(f)
