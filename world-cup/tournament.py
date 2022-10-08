@@ -22,11 +22,9 @@ def main():
 
     with open(csv_file) as f:
         dict = csv.DictReader(f)
-        next(dict)
-
         for team in dict:
-            team['team'] = int(team['team'])
-            team.append['team']
+            team["rating"] = int(team["rating"])
+            teams.append["team"]
 
 
     counts = {}
