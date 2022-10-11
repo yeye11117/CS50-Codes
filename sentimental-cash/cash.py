@@ -1,11 +1,11 @@
 from cs50 import get_float
 
-def get_cents(cent):
+def get_cents(user):
         user = get_float("Change owed: ")
-        return cent
+        return user
 
-get_cents(cent)
-print("worked")
+x = get_cents()
+print(x)
 
 #def main():
 
