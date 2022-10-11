@@ -4,7 +4,6 @@ def cal_quarter(dollar):
     while dollar >= 0.25:
 
         dollar = dollar - 0.25
-        quarter = 0
         quarter = quarter + 1
         print(quarter)
         return quarter
