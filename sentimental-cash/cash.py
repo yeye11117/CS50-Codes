@@ -3,7 +3,8 @@ from cs50 import get_float
 x = get_float("Change owed: ")
 
 def main():
-    print ("Hello")
+
+    def get_cents
 
 
 if __name__ == ("__main__"):
