@@ -31,6 +31,7 @@ while True:
     if dollar >= 1:
         break
 
+test = cal_quarter
 
 
 #x = cal_quarter(dollar)
