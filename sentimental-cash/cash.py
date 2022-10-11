@@ -4,7 +4,7 @@ def get_cents(user):
         user = get_float("Change owed: ")
         return user
 
-x = get_cents()
+x = get_cents(void)
 print(x)
 
 #def main():
