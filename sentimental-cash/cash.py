@@ -33,5 +33,6 @@ while True:
 
 
 
-x = cal_quarter(dollar)
-print(x)
+#x = cal_quarter(dollar)
+y = cal_dimes(dollar)
+print(y)
