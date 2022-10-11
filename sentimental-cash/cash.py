@@ -1,11 +1,10 @@
 from cs50 import get_float
 
-def get_cents(user):
-        user = get_float("Change owed: ")
-        return user
-
-x = get_cents(void)
-print(x)
+def get_cents():
+    while True:
+        cent = get_float("Change owed: ")
+        if cent <= 1:
+            break
 
 #def main():
 
