@@ -10,5 +10,7 @@ while True:
     if dollar >= 1:
         break
 
+
+
 x = cal_quarter(dollar)
 print(x)
