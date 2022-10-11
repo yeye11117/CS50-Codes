@@ -5,7 +5,7 @@ def get_cents(cent):
         return cent
 
 def main():
-    get_cents()
+    get_cents(cent)
     print("worked")
 
 if __name__ == ("__main__"):
