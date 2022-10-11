@@ -4,9 +4,10 @@ def get_cents(cent):
         user = get_float("Change owed: ")
         return cent
 
-def main():
-    get_cents(cent)
-    print("worked")
+get_cents(cent)
+print("worked")
 
-if __name__ == ("__main__"):
-    main()
+#def main():
+
+#if __name__ == ("__main__"):
+   # main()
