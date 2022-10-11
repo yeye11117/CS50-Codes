@@ -7,7 +7,7 @@ def cal_quarter(dollar):
         dollar = dollar - 0.25
         quarter = quarter + 1
         print(dollar)
-        return quarter
+    return dollar
 
 while True:
     dollar = get_float("Change owed: ")
