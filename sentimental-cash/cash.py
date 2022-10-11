@@ -11,4 +11,4 @@ while True:
         break
 
 x = cal_quarter
-print(x)
+print(fromhex(x))
