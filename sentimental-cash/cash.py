@@ -2,8 +2,10 @@ from cs50 import get_float
 
 def cal_quarter(dollar):
     while dollar >= 0.25:
+        quarter
         dollar = dollar - 0.25
-        print(dollar)
+        quarter = quarter + 1
+        print(quarter)
 
 while True:
     dollar = get_float("Change owed: ")
