@@ -4,6 +4,7 @@ x = get_float("Change owed: ")
 
 def main():
     get_cents(cent)
+    
 
 
 
@@ -14,8 +15,7 @@ def main():
 
 def get_cents(cent):
     user = get_float("Change owed: ")
-    x = user * 3
-    return x
+    return user
 
 
 
