@@ -21,6 +21,7 @@ def cal_dimes(dollar):
         print(dollar)
     return dimes
 
-x = cal_quarter(dollar)
-y = cal_dimes(dollar)
-print(y)
+i = cal_quarter(dollar) + cal_dimes(dollar)
+#x = cal_quarter(dollar)
+#y = cal_dimes(dollar)
+print(i)
