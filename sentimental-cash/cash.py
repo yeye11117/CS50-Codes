@@ -1,27 +1,27 @@
 from cs50 import get_float
 
 while True:
-    dollar = get_float("Change owed: ")
-    if dollar >= 1:
+    cent = get_float("Change owed: ")
+    if cent >= 1:
         break
 
-def cal_quarter(dollar):
-    quarter = 0
-    while dollar >= 0.25:
-        dollar = dollar - 0.25
-        quarter = quarter + 1
-        print(dollar)
-    return quarter
+cent = round(cent * 100)
+count = 0
 
-def cal_dimes(dollar):
-    dimes = 0
-    while dollar >= 0.10:
-        dollar = dollar - 0.10
-        dimes = dimes + 1
-        print(dollar)
-    return dimes
+while cent >= 25:
+    cent = cent - 25
+    count += 1
 
-i = cal_quarter(dollar) + cal_dimes(dollar)
-#x = cal_quarter(dollar)
-#y = cal_dimes(dollar)
-print(i)
+while cent >= 10:
+    cent = cent - 10
+    count += 1
+
+while cent >= 5:
+    cent = cent - 5
+    count += 1
+
+while cent >= 1:
+    cent = cent - 1
+    count += 1
+
+print("Total Coins: ", count)
