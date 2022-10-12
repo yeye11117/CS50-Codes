@@ -2,7 +2,7 @@ from cs50 import get_float
 
 while True:
     cent = get_float("Change owed: ")
-    if cent >= 1:
+    if cent > 0:
         break
 
 cent = round(cent * 100)
