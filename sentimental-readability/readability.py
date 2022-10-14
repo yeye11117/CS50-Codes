@@ -19,3 +19,4 @@ for i in text:
     elif i == "." or i == "!" or i == "?":
         sentence += 1
         print("sen", sentence)
+
