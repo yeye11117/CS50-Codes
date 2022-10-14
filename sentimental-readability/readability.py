@@ -6,3 +6,4 @@ sentence = float(0)
 
 text = get_string("Text: ")
 
+for 
