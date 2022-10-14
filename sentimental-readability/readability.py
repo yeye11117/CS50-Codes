@@ -6,5 +6,5 @@ sentence = float(0)
 
 text = get_string("Text: ")
 
-for i in len(text):
-    print("It looped kek")
+for i in range(len(text)):
+    if 
