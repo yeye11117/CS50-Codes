@@ -10,12 +10,12 @@ for i in range(len(text)):
 
     if text.isalnum():
         letters += 1
-        print("let" + letters)
+        print("let", letters)
 
     elif text == (" "):
         words += 1
-        print("words" + words)
+        print("words", words)
 
     elif text == "." or "!" or "?":
         sentence += 1
-        print("sen" + sentence)
+        print("sen", sentence)
