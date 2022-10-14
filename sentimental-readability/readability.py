@@ -8,14 +8,14 @@ text = get_string("Text: ")
 
 for i in text:
 
-    if text.isalpha():
+    if i.isalpha():
         letters += 1
         print("let", letters)
 
-    elif text == (" "):
+    elif i == (" "):
         words += 1
         print("words", words)
 
-    elif text == "." or "!" or "?":
+    elif i == "." or i == "!" or i == "?":
         sentence += 1
         print("sen", sentence)
