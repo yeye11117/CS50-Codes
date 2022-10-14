@@ -7,6 +7,9 @@ sentence = float(0)
 text = get_string("Text: ")
 
 for i in range(len(text)):
+
     if text.isnumeric():
         letters += 1
-    
+        print(letters)
+
+    #elif
