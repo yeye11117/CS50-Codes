@@ -7,4 +7,6 @@ sentence = float(0)
 text = get_string("Text: ")
 
 for i in range(len(text)):
-    if 
+    if text.isnumeric():
+        letters += 1
+    
