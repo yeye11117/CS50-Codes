@@ -10,13 +10,23 @@ for i in text:
 
     if i.isalpha():
         letters += 1
-        print("let", letters)
 
     elif i == (" "):
         words += 1
-        print("words", words)
 
     elif i == "." or i == "!" or i == "?":
         sentence += 1
-        print("sen", sentence)
 
+l = float((letters/words)*100)
+s = float((sentence/words)*100)
+
+index = int(round((0.0588 * l) - (0.296 * s) - 15.8))
+
+if index < 1:
+    print("Before Grade 1\n")
+
+elif index >= 16:
+    print("Grade 16+\n")
+
+else:
+    print("Grade" + index)
