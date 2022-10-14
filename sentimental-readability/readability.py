@@ -6,9 +6,9 @@ sentence = float(0)
 
 text = get_string("Text: ")
 
-for i in range(len(text)):
+for i in text:
 
-    if text.isalnum():
+    if text.isalpha():
         letters += 1
         print("let", letters)
 
