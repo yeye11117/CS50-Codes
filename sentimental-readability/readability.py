@@ -8,7 +8,7 @@ text = get_string("Text: ")
 
 for i in range(len(text)):
 
-    if text.isnumeric():
+    if text.isalnum():
         letters += 1
         print(letters)
 
