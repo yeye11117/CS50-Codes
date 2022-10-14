@@ -12,4 +12,10 @@ for i in range(len(text)):
         letters += 1
         print(letters)
 
-    #elif
+    elif text == (" "):
+        words += 1
+        print(words)
+
+    elif text == "." or "!" or "?":
+        sentence += 1
+        print(sentence)
