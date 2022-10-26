@@ -20,7 +20,7 @@ def main():
         dna_sequence = file.read()
 
     # TODO: Find longest match of each STR in DNA sequence
-    subsequence = list(database[0].keys())[1:]
+    subsequences = list(database[0].keys())[1:]
 
     results = {}
     for subsequence in subsequences:
@@ -30,16 +30,14 @@ def main():
     for person in database:
         match = 0
         for subsequence in subsequences:
-            if int(person[subsequence]) == result[subsequence]:
+            if int(person[subsequence]) == results[subsequence]:
                 match += 1
 
         if match == len(subsequences):
             print(person["name"])
             return
-SHA256:U8pr3v9VoeDBTAF6ZaGvDcyryMcgAKczaMTYlnvHh/w
-    print("No match")
 
-    return
+    print("No match")
 
 
 def longest_match(sequence, subsequence):
