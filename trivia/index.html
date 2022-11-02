@@ -9,12 +9,13 @@
             // TODO: Add code to check answers to questions
             document.addEventListener('DOMContentLoaded', function(){
                 let correct_button = document.querySelector("#correct");
-                let correct_button = document.querySelectorAll(".incorrect");
+                let incorrect_button = document.querySelectorAll(".incorrect");
 
                 correct_button.addEventListener('click', function(){
-                    console.log("hello");
+                    correct_button.style.backgroundColor = "red";
                 })
             });
+            
         </script>
     </head>
     <body>
