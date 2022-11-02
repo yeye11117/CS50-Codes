@@ -3,5 +3,5 @@
 SELECT DISTINCT name FROM people
 JOIN stars on stars.person_id = people.id
 JOIN movies ON movies.id = stars.movie_id
-WHERE movie.year = 2004
+WHERE movies.year = 2004
 ORDER BY people.birth ASC;
