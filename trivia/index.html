@@ -21,6 +21,10 @@
                 submitBtnElement.addEventListener('click', freeResponse);
             })
                 function multipleChoice(event) {
+                    if (multipleIsAnswered == true) {
+                        return;
+                    }
+                    
                     const currentBtnElement = event.target;
                     let newH4Element = document.createElement('h4');
 
