@@ -43,6 +43,9 @@
                 }
 
                 function freeResponse() {
+                    if (freeIsAnswered == true) {
+                        return;
+                    }
 
                     let answerInputElement = document.querySelector('#free-response');
                     let answer = answerInputElement.value;
@@ -59,6 +62,7 @@
 
                     let divElement = answerInputElement.parentElement;
                     divElement.appendChild(newH4Element);
+                    freeIsAnswered = true;
                 }
             })
 
