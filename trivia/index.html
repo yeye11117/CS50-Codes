@@ -24,7 +24,7 @@
                     if (multipleIsAnswered == true) {
                         return;
                     }
-                    
+
                     const currentBtnElement = event.target;
                     let newH4Element = document.createElement('h4');
 
@@ -39,6 +39,7 @@
 
                     let divElement = currentBtnElement.parentElement;
                     divElement.appendChild(newH4Element);
+                    multipleIsAnswered = true;
                 }
 
                 function freeResponse() {
