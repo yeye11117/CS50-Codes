@@ -31,8 +31,8 @@
                         <!-- TODO: Loop through the database entries to display them in this table -->
                         {% for person in people %}
                             <tr>
-                                <td>{{ name }}</td>
-                                <td>{{ registrants[name]}}</td>
+                                <td>{{ person.name }}</td>
+                                <td>{{ person.month}} / {{ person.day }}</td>
                             </tr>
                         {% end for %}
                     </tbody>
