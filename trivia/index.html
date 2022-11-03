@@ -38,10 +38,14 @@
                 function freeResponse() {
 
                     let answerInputElement = document.querySelector('#free-response');
-                    console.log(answerInputElement)
                     let answer = answerInputElement.value;
-                    console.log(answer);
 
+                    if (answer == 'yes'){
+                        answerInputElement.style.background = 'green';
+                    }
+                    else{
+                        answerInputElement.style.background = 'red';
+                    }
                 }
         </script>
     </head>
