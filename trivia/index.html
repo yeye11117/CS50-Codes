@@ -11,6 +11,8 @@
 
                 let btnElements = document.querySelectorAll('.multiple');
                 let submitBtnElement = document.querySelector('#confirm-btn');
+                let multipleAnswerd = false;
+                let freeIsAnswered = false;
 
                 for (let btnElement of btnElements) {
                     btnElement.addEventListener('click', event => multipleChoice(event));
