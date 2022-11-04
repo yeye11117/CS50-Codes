@@ -11,6 +11,7 @@
                 <th scope="col">Symbols</th>
                 <th scope="col">Shares</th>
                 <th scope="col">Price</th>
+                <th scope="col">TOTAL</th>
             </tr>
         </thead>
         <tbody>
@@ -19,8 +20,17 @@
                     <td>{{ row["symbol"] }}</td>
                     <td>{{ row["shares"] }}</td>
                     <td>{{ row["price"] }}</td>
+                    <td></td>
                 </tr>
             {% endfor %}
         </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <th scope="1">Cash</th>
+                <th scope="1">{{ cash }}</th>
+            </tr>
+        </tfoot>
     </table>
 {% endblock %}
