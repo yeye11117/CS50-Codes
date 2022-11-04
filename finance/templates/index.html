@@ -11,14 +11,12 @@
             <th>Shares</th>
             <th>Price</th>
         </tr>
-        <tr>
             {% for row in database %}
-                <tr>
-                    {{ row["symbol"] }}
-                    {{ row["shares"] }}
-                    {{ row["price"] }}
-                </tr>
+            <tr>
+                <td>{{ row["symbol"] }}</td>
+                <td>{{ row["shares"] }}</td>
+                <td>{{ row["price"] }}</td>
+            </tr>
             {% endfor %}
-        </tr>
     </table>
 {% endblock %}
