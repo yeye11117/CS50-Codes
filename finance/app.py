@@ -140,7 +140,9 @@ def register():
         hash = generate_password_hash(password)
 
         try:
-            
+            db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hash)
+        except:
+            return apology("Username Already Exists")
 
 
 @app.route("/sell", methods=["GET", "POST"])
