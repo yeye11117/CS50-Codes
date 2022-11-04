@@ -83,7 +83,11 @@ def buy():
         db.execute("UPDATE users SET cash = ? WHERE id = ?", user_id)
 
         date = datetime.datetime.now()
+
+        db.execute("INSERT INTO transacions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock["symbol"], shares, stock["price"], date)
         
+
+        return redirect("/")
 
 @app.route("/history")
 @login_required
