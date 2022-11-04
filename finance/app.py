@@ -85,7 +85,8 @@ def buy():
         date = datetime.datetime.now()
 
         db.execute("INSERT INTO transacions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock["symbol"], shares, stock["price"], date)
-        
+
+        flash("Bought!")
 
         return redirect("/")
 
