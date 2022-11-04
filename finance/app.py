@@ -80,7 +80,7 @@ def buy():
 
         updt_cash = user_cash - transaction_value
 
-        db.execute("UPDATE users SET cash = ? WHERE id = ?", user_id)
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", uptd_cash, user_id)
 
         date = datetime.datetime.now()
 
