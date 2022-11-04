@@ -5,6 +5,7 @@ from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash
+import datetime
 
 from helpers import apology, login_required, lookup, usd
 
@@ -80,9 +81,9 @@ def buy():
         updt_cash = user_cash - transaction_value
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", user_id)
+
+        date = datetime.datetime.now()
         
-
-
 
 @app.route("/history")
 @login_required
