@@ -6,11 +6,14 @@
 
 {% block main %}
     <table>
-        <tr>
-            <th>Symbol</th>
-            <th>Shares</th>
-            <th>Price</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
             {% for row in database %}
             <tr>
                 <td>{{ row["symbol"] }}</td>
@@ -18,5 +21,6 @@
                 <td>{{ row["price"] }}</td>
             </tr>
             {% endfor %}
+        </tbody>
     </table>
 {% endblock %}
