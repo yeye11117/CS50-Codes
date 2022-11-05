@@ -78,7 +78,7 @@ def buy():
         transaction_value = shares * stock["price"]
 
         user_id = session["user_id"]
-        user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id=user_id)
+        user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id = user_id)
         user_cash = user_cash_db[0]["cash"]
 
         if user_cash < transaction_value:
@@ -109,7 +109,7 @@ def add_cash():
             return apology("You must provide a card")
 
         user_id = session["user_id"]
-        user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id=user_id)
+        user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id = user_id)
         user_cash = user_cash_db[0]["cash"]
 
         updt_cash = user_cash + new_cash
@@ -123,7 +123,7 @@ def add_cash():
 def history():
     """Show history of transactions"""
     user_id = session["user_id"]
-    transactions_db = db.execute("SELECT * FROM transactions WHERE user_id = :id", id=user_id)
+    transactions_db = db.execute("SELECT * FROM transactions WHERE user_id = :id", id = user_id)
     return render_template("history.html", transactions = transactions_db)
 
 @app.route("/login", methods=["GET", "POST"])
@@ -229,13 +229,13 @@ def register():
         return redirect("/")
 
 
-@app.route("/sell", methods=["GET", "POST"])
+@app.route("/sell", methods = ["GET", "POST"])
 @login_required
 def sell():
     """Sell shares of stock"""
     if request.method == "GET":
         user_id = session["user_id"]
-        symbols_user = db.execute("SELECT symbol FROM transactions WHERE user_id = :id GROUP BY symbol HAVING SUM(shares) > 0", id=user_id)
+        symbols_user = db.execute("SELECT symbol FROM transactions WHERE user_id = :id GROUP BY symbol HAVING SUM(shares) > 0", id = user_id)
         return render_template("sell.html", symbols = [row["symbol"] for row in symbols_user])
 
     else:
@@ -256,10 +256,10 @@ def sell():
         transaction_value = shares * stock["price"]
 
         user_id = session["user_id"]
-        user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id=user_id)
+        user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id = user_id)
         user_cash = user_cash_db[0]["cash"]
 
-        user_shares = db.execute("SELECT shares FROM transactions WHERE user_id=:id AND symbol = :symbol GROUP BY symbol", id=user_id, symbol=symbol)
+        user_shares = db.execute("SELECT shares FROM transactions WHERE user_id=:id AND symbol = :symbol GROUP BY symbol", id = user_id, symbol = symbol)
         user_shares_real = user_shares[0]["shares"]
 
         if shares > user_shares_real:
