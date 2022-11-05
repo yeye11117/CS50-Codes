@@ -109,8 +109,14 @@ def add_cash():
             return apology("You must provide a card")
 
         user_id = session["user_id"]
+        user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id=user_id)
+        user_cash = user_cash_db[0]["cash"]
 
-        
+        updt_cash = user_cash + new_cash
+
+        db.execute("UPDATE users SET cash = ? WHERE id = ?", updt_cash, user_id)
+
+        return redirect("/")
 
 @app.route("/history")
 @login_required
