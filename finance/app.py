@@ -236,18 +236,21 @@ def sell():
         user_cash_db = db.execute("SELECT cash FROM users WHERE id = :id", id=user_id)
         user_cash = user_cash_db[0]["cash"]
 
-        if user_cash < transaction_value:
-            return apology("Not Enough Funds")
+        user_shares = db.execute("SELECT shares FROM transactions WHERE user_id=:id AND symbol = :symbol GROUP BY symbol", id=user_id, symbol=symbol)
+        user_shares_real = user_shares[0]["shares"]
 
-        updt_cash = user_cash - transaction_value
+        if shares > user_shares_real:
+            return apology("You do not not have this amount of shares")
+
+        updt_cash = user_cash + transaction_value
 
         db.execute("UPDATE users SET cash = ? WHERE id = ?", updt_cash, user_id)
 
         date = datetime.datetime.now()
 
-        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock["symbol"], shares, stock["price"], date)
+        db.execute("INSERT INTO transactions (user_id, symbol, shares, price, date) VALUES (?, ?, ?, ?, ?)", user_id, stock["symbol"], (-1)*shares, stock["price"], date)
 
-        flash("Bought!")
+        flash("SOLD!")
 
         return redirect("/")
 
