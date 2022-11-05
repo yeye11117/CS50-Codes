@@ -253,4 +253,3 @@ def sell():
         flash("SOLD!")
 
         return redirect("/")
-
