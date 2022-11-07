@@ -31,3 +31,8 @@ ul li a:hover{
     color:#000;
 }
 
+.logo img{
+    float: left;
+    width: 250px;
+    height: auto;
+}
